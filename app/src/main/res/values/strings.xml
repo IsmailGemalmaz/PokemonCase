@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PokemonCase</string>
+    <string name="something_went_wrong">Something went wrong.</string>
+    <string name="pokemon_list">Pokemon List</string>
+    <string name="retry">Retry</string>
+    <string name="permission">Give Me Overlay Permission</string>
+
+    <string name="app_close">Close Application</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="close_service">Close Window</string>
+    <string name="error_internet">No Internet Connection</string>
+    <string name="btn_show_ovarlay">SHOW BULBASAUR IN OVERLAY</string>
+        <string name="ACTION_MANAGE_OVERLAY_NO_PERMISSION">NO ACTION MANAGEMENT PLACEMENT PERMISSION</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

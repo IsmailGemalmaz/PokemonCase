@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="position"
+            type="int" />
+        <variable
+            name="click"
+            type="com.example.pokemoncase.ui.adapter.PokemonAdapter.OnItemClickListener" />
+        <variable
+            name="pokemonItemUiState"
+            type="com.example.pokemoncase.data.model.PokemonModel" />
+        <variable
+            name="listener"
+            type="com.example.pokemoncase.ui.PokemonClickListener" />
+
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llItem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_item_pokemon"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:onClick="@{()->listener.onPokemonClicked(position)}"
+        >
+        <TextView
+            android:id="@+id/pokemonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:text="@{pokemonItemUiState.name}"
+            />
+    </LinearLayout>
+</layout>
